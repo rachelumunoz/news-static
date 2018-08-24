@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: new post
 date: '2018-08-27T00:00:00-07:00'
-description: description text about blogpost
+description: description text about post
 tags:
   - cool
   - blog post
