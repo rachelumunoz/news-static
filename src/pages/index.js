@@ -27,6 +27,14 @@ export default class IndexPage extends React.Component {
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
                 </p>
+               
+
+                <img 
+                  src="http://requiredradio.com/wp/wp-content/uploads/2014/03/Generic-Rock-Band.jpg"
+                  />
+                <br/>
+                <br/>
+               
                 <p>
                   {post.excerpt}
                   <br />
