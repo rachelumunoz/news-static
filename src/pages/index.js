@@ -13,23 +13,29 @@ export default class IndexPage extends React.Component {
           <div className="content">
             <h1 className="has-text-weight-bold is-size-2">Latest Live Music News</h1>
           </div>
-          <div className="collapse-container">
+          <div className="grid-container">
             {posts
               .map(({ node: post }) => (
-                <div>
+                <div
+                  className="grid-cell"
+                  style={{ border: '1px solid #eaecee'}}
+                  key={post.id}
+                >
                   <div
-                    className="collapse"
-                    style={{padding: '2em 4em' }}
-                    key={post.id}
+                    className="cell-content"                  
                   >
                     <div className="dynamic">
-                      <p >
-                        <Link className="has-text-primary" to={post.fields.slug}>
-                          {post.frontmatter.title}
-                        </Link>
-                        <span> &bull; </span>
-                        <small>{post.frontmatter.date}</small>
-                      </p>
+                      <div
+                        className="article-title"
+                      >
+                        <p>
+                          <Link className="has-text-primary" to={post.fields.slug}>
+                            {post.frontmatter.title}
+                          </Link>
+                          <span> &bull; </span>
+                          <small>{post.frontmatter.date}</small>
+                        </p>
+                      </div>
                     
 
                       <img 
@@ -38,20 +44,28 @@ export default class IndexPage extends React.Component {
                       <br/>
                       <br/>
                     
-                      <p>
-                        {post.excerpt}
-                        <br />
-                        <br />
+                      <div
+                        className="post-container"
+                      >
+                        <p
+                          className="post-excerpt"
+                        >
+                          {post.excerpt}
+                        </p>
                         <Link className="button is-small" to={post.fields.slug}>
                           Keep Reading →
                         </Link>
-                      </p>
+                      </div>
                     </div>
+
+                    
                   </div>
                 </div>
               ))}
             </div>
         </div>
+        <br/>
+        <br/>
       </section>
     )
   }

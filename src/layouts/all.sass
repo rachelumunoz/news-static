@@ -43,17 +43,44 @@ $primary-invert: $kaldi-red-invert
 
 
 
-.collapse-container
-  
-  margin: 20px
+.grid-container
+  max-width: 100%
+  margin: 0
   display: grid
-  grid-template: repeat(3, 30vw) / repeat(3, 30vw)
-  grid-gap: 10px
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px
+  /* border: 5px solid red */
+
+.grid-cell
+  /* background-color: grey */
+  /* border: 3px solid black */
+
+.cell-content
+  max-height: 100%
+  max-width: 100%
 
 
 
+.dynamic
 
 
+.post-container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
+
+.post-excerpt
+  overflow: hidden
+  max-height: 30px
+  padding: 10px
+  margin-bottom: 10px
+
+
+.article-title
+  height: 50px
+  padding-bottom: 20px
+  margin: 20px
 
 @import "~bulma"
