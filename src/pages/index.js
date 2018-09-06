@@ -6,7 +6,9 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
+    // console.log("data", data)
     console.log("edges", posts);
+        
     return (
       <section className="section">
         <div className="container">
@@ -25,22 +27,24 @@ export default class IndexPage extends React.Component {
                     className="cell-content"                  
                   >
                     <div className="dynamic">
+                    
+
+                      <img 
+                        src="https://picsum.photos/300/275/?random"
+                        />
+                      
                       <div
                         className="article-title"
                       >
                         <p>
-                          <Link className="has-text-primary" to={post.fields.slug}>
+                          <Link className="title-style" to={post.fields.slug}>
                             {post.frontmatter.title}
                           </Link>
-                          <span> &bull; </span>
+                          <br/>
                           <small>{post.frontmatter.date}</small>
                         </p>
                       </div>
-                    
-
-                      <img 
-                        src="http://requiredradio.com/wp/wp-content/uploads/2014/03/Generic-Rock-Band.jpg"
-                        />
+                      
                       <br/>
                       <br/>
                     
