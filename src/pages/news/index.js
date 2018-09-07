@@ -52,8 +52,6 @@ export default class NewsPage extends React.Component {
                 </div>
               </div>
             ))}
-          }
-
         </div>
       </section>
     )

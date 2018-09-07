@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
                         className="article-title"
                       >
                         <p>
-                          <Link className="title-style" to={post.fields.slug}>
+                          <Link className="has-text-primary" to={post.fields.slug}>
                             {post.frontmatter.title}
                           </Link>
                           <br/>
