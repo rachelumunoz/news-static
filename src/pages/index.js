@@ -28,10 +28,11 @@ export default class IndexPage extends React.Component {
                   >
                     <div className="dynamic">
                     
-
-                      <img 
-                        src="https://picsum.photos/300/275/?random"
-                        />
+                      <Link to={post.fields.slug}>
+                        <img 
+                          src="https://picsum.photos/430/325/?random"
+                          />
+                      </Link>
                       
                       <div
                         className="article-title"
@@ -56,9 +57,6 @@ export default class IndexPage extends React.Component {
                         >
                           {post.excerpt}
                         </p>
-                        <Link className="button is-small" to={post.fields.slug}>
-                          Keep Reading →
-                        </Link>
                       </div>
                     </div>
 
@@ -100,6 +98,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
         }
       }

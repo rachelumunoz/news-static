@@ -7,34 +7,48 @@ export default class ReviewsPage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     console.log("edges", posts);
+
+    
     return (
       <section className="section">
         <div className="container">
-          <div className="content">
+          <div className="content grid">
             <h1 className="has-text-weight-bold is-size-2">Reviews</h1>
           </div>
+         
           {posts
             .map(({ node: post }) => (
+              
               <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                className="content news-post"
+                style={{ border: '1px solid #eaecee'}}
                 key={post.id}
               >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                <div className="news-cell">
+                
+                  <div className="left-side">
+                    <Link 
+                      className="cell-link"
+                      to={post.fields.slug}
+                    >
+                        <img className="news-image"
+                          src="https://picsum.photos/300/225/?random"
+                          />
+                    </Link>
+                  </div>
+                  <div className="right-side">
+                    <Link className="has-text-primary" to={post.fields.slug}>
+                      {post.frontmatter.title}
+                    </Link>
+                    <div>
+                      <p>
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    <span> {post.frontmatter.date} </span>
+
+                  </div>
+                </div>
               </div>
             ))}
         </div>

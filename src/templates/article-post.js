@@ -15,6 +15,9 @@ export const ArticlePostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
+    console.log("THis is the content", PostContent)
+
+
   return (
     <section className="section">
       {helmet || ''}

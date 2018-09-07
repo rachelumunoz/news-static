@@ -3,16 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 export default class NewsPage extends React.Component {
-  constructor(props){
-    super(props)
-
-    this.state = {counter:0}
-  }
-  
-  increaseCount() {
-    console.log("counter increased");;
-  }
-
+ 
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -31,29 +22,33 @@ export default class NewsPage extends React.Component {
               
               <div
                 className="content news-post"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                style={{ border: '1px solid #eaecee'}}
                 key={post.id}
               >
-                <div
-                  className={
-                    this.state.counter++ % 2 === 0 ? "dynamic-grid-spread something" : "dynamic-grid-column something"
-                 }
-                >
-                  <p>
+                <div className="news-cell">
+                
+                  <div className="left-side">
+                    <Link 
+                      className="cell-link"
+                      to={post.fields.slug}
+                    >
+                        <img className="news-image"
+                          src="https://picsum.photos/300/225/?random"
+                          />
+                    </Link>
+                  </div>
+                  <div className="right-side">
                     <Link className="has-text-primary" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
+                    <div>
+                      <p>
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    <span> {post.frontmatter.date} </span>
+
+                  </div>
                 </div>
               </div>
             ))}
