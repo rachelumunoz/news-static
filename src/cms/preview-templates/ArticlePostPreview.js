@@ -1,22 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { ArticlePostTemplate } from '../../templates/article-post'
+// import React from 'react'
+// import PropTypes from 'prop-types'
+// import { ArticlePostTemplate } from '../../templates/article-post'
 
-const ArticlePostPreview = ({ entry, widgetFor }) => (
-  <ArticlePostTemplate
-    content={widgetFor('body')}
-    description={entry.getIn(['data', 'description'])}
-    image={widgetFor('image')}
-    tags={entry.getIn(['data', 'tags'])}
-    title={entry.getIn(['data', 'title'])}
-  />
-)
+// const ArticlePostPreview = ({ entry, widgetFor }) => (
+//   <ArticlePostTemplate
+//     content={widgetFor('body')}
+//     description={entry.getIn(['data', 'description'])}
+//     image={widgetFor('image')}
+//     tags={entry.getIn(['data', 'tags'])}
+//     title={entry.getIn(['data', 'title'])}
+//   />
+// )
 
-ArticlePostPreview.propTypes = {
-  entry: PropTypes.shape({
-    getIn: PropTypes.func,
-  }),
-  widgetFor: PropTypes.func,
-}
+// ArticlePostPreview.propTypes = {
+//   entry: PropTypes.shape({
+//     getIn: PropTypes.func,
+//   }),
+//   widgetFor: PropTypes.func,
+// }
 
-export default ArticlePostPreview
+// export default ArticlePostPreview
