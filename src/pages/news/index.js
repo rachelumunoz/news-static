@@ -3,9 +3,44 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 export default class NewsPage extends React.Component {
- 
+  constructor(props){
+    super(props)
+
+    console.log("data is ", )
+
+    this.state = {
+      imageCounter: 0,
+      images : [
+        "/img/11.jpeg", 
+        "/img/12.jpeg", 
+        "/img/13.jpeg", 
+        "/img/16.jpeg", 
+        "/img/17.jpeg",
+        "/img/3.jpeg", 
+        "/img/4.jpeg", 
+        "/img/5.jpeg",
+        "/img/18.jpeg",
+        "/img/19.jpeg",
+        "/img/20.jpeg",
+        "/img/6.jpeg", 
+        "/img/7.jpeg", 
+        "/img/8.jpeg", 
+        "/img/9.jpeg", 
+        "/img/10.jpeg", 
+        "/img/1.jpeg",
+        "/img/2.jpeg",
+        "/img/14.jpeg", 
+        "/img/15.jpeg", 
+
+      ]
+    }
+  }
+
   render() {
     const { data } = this.props
+
+
+    console.log("data", data)
     const { edges: posts } = data.allMarkdownRemark
     console.log("edges", posts);
 
@@ -33,7 +68,7 @@ export default class NewsPage extends React.Component {
                       to={post.fields.slug}
                     >
                         <img className="news-image"
-                          src="https://picsum.photos/300/225/?random"
+                          src={`${this.state.images[this.state.imageCounter++]}`}
                           />
                     </Link>
                   </div>
@@ -70,7 +105,7 @@ export const pageQuery = graphql`
   query NewsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "article-post" } }}
     ) { 
       edges {
         node {

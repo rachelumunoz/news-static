@@ -11,7 +11,6 @@ export const ArticlePostTemplate = ({
   description,
   tags,
   title,
-  image,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
