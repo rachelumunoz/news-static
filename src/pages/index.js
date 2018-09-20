@@ -51,6 +51,7 @@ export default class IndexPage extends React.Component {
 
     console.log("post is", post)
     if (post.frontmatter.image === null){
+      // return `/img/${Math.floor(Math.random() * 10) + 1}.jpeg`
       return "/img/20.jpeg"
     } else return post.frontmatter.image
     
