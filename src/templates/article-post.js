@@ -10,6 +10,7 @@ export const ArticlePostTemplate = ({
   contentComponent,
   description,
   tags,
+  image,
   title,
   helmet,
 }) => {
