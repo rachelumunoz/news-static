@@ -7,6 +7,7 @@ tags:
   - cool
   - test
   - awesome
+image: /img/14.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Mauris sit amet massa vitae tortor condimentum lacinia quis. Etiam erat velit scelerisque in dictum non consectetur a erat. 
 
