@@ -5,48 +5,21 @@ import Link from 'gatsby-link'
 export default class ReviewsPage extends React.Component {
   constructor(props){
     super(props)
-
-    console.log("data is ", )
-
-    this.state = {
-      imageCounter: 0,
-      images : [
-        "/img/6.jpeg", 
-        "/img/7.jpeg", 
-        "/img/8.jpeg", 
-        "/img/9.jpeg", 
-        "/img/10.jpeg", 
-        "/img/1.jpeg",
-        "/img/2.jpeg",
-        "/img/14.jpeg", 
-        "/img/15.jpeg", 
-        "/img/16.jpeg", 
-        "/img/17.jpeg",
-        "/img/3.jpeg", 
-        "/img/4.jpeg", 
-        "/img/5.jpeg", 
-        "/img/11.jpeg", 
-        "/img/12.jpeg", 
-        "/img/13.jpeg", 
-        "/img/18.jpeg",
-        "/img/19.jpeg",
-        "/img/20.jpeg"   
-      ]
-    }
   }
-  
-  
+
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
-    console.log("edges", posts);
 
-    
+
+    console.log("data in reveiews", data)
+    const { edges: posts } = data.allMarkdownRemark
+    // console.log("edges", posts);
+
     return (
       <section className="section">
         <div className="container">
           <div className="content grid">
-            <h1 className="has-text-weight-bold is-size-2">Reviews</h1>
+            <h1 className="has-text-weight-bold is-size-2">Latest News</h1>
           </div>
          
           {posts
@@ -99,10 +72,10 @@ ReviewsPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query ReviewsQuery {
+  query ReviewsPageQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "reviews-post" } }}
     ) { 
       edges {
         node {
