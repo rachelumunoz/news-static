@@ -15,7 +15,7 @@ export const ArticlePostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
-    console.log("image", image)
+    // console.log("image", image)
 
 
   return (
