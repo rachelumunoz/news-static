@@ -65,7 +65,7 @@ export default class ReviewsPage extends React.Component {
                       to={post.fields.slug}
                     >
                         <img className="news-image"
-                          src={`${this.state.images[this.state.imageCounter++]}`}
+                          src={`${post.frontmatter.image}`}
                           />
                     </Link>
                   </div>
@@ -114,6 +114,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            image
             date(formatString: "MMMM DD, YYYY")
             
           }
