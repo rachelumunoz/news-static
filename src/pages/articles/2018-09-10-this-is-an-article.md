@@ -2,7 +2,7 @@
 templateKey: article-post
 title: this is an article
 date: '2018-09-10T13:29:26-07:00'
-image: /img/flavor_wheel.jpg
+image: /img/10.jpeg
 description: article with image description
 tags:
   - article
