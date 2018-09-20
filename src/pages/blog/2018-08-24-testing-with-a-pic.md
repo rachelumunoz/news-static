@@ -6,6 +6,7 @@ description: awesome description describing pots
 tags:
   - bananas
   - awesome
+image: /img/15.jpeg
 ---
 Morbi gravida nibh lacus, sed lobortis felis maximus non. Nam consectetur metus sit amet diam faucibus placerat. Vivamus posuere fringilla justo, at consequat metus elementum vel. Curabitur sagittis nisi et elit tempor auctor. Suspendisse a magna ut metus scelerisque condimentum vel sit amet nibh. Aliquam erat volutpat. Donec turpis odio, porta convallis sem vel, convallis pretium mauris. Praesent mattis accumsan est, sed interdum purus congue id. Cras convallis mattis sem, commodo suscipit enim accumsan ac. Etiam risus lacus, aliquet vitae ultricies ut, accumsan id eros. Vivamus et eleifend urna. Integer vehicula nisl eu massa consectetur, blandit consectetur sem placerat. Vivamus scelerisque est ac congue ornare.
 
