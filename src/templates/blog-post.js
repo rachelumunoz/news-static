@@ -9,11 +9,14 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  image,
   tags,
   title,
   helmet
 }) => {
   const PostContent = contentComponent || Content
+
+  {console.log(image)}
 
   return (
     <section className="section">
@@ -25,6 +28,13 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <div className="article-default-image-container">
+              <img
+                className="article-default-image" 
+                style={{width: 350}}
+                src={image}
+              />
+            </div>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -64,6 +74,7 @@ const BlogPost = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
     />
   )
 }
@@ -86,6 +97,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        image
       }
     }
   }

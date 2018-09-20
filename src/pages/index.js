@@ -41,6 +41,20 @@ export default class IndexPage extends React.Component {
 
   //   return 0
   // }
+
+  loadImage(post){
+    // if (post.fields.image === null){
+    //   return this.state.images[this.state.imageCounter++]
+    // } else {
+    //   return post.fields.image
+    // }
+
+    console.log("post is", post)
+    if (post.frontmatter.image === null){
+      return "/img/20.jpeg"
+    } else return post.frontmatter.image
+    
+  }
   
   render() {
     const { data } = this.props
@@ -71,7 +85,7 @@ export default class IndexPage extends React.Component {
                     
                       <Link to={post.fields.slug}>
                         <img 
-                          src={`${this.state.images[this.state.imageCounter++]}`}
+                          src={`${this.loadImage(post)}`}
                           />
                       </Link>
                       <div
@@ -136,9 +150,9 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            image
             date(formatString: "MMMM DD, YYYY")
             tags
-            image
           }
         }
       }
