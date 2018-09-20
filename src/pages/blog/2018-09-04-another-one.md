@@ -11,6 +11,7 @@ tags:
   - awesome
   - cool
   - test
+image: /img/14.jpeg
 ---
 Appellantur ullamcorper no duo. Dicit virtute quaerendum eu eos, quis facete scaevola nec id. In nec simul aliquam persecuti. Civibus minimum mandamus eu ius. Vim decore nullam laoreet cu, fugit primis eam id. Et inani omittantur neglegentur duo, mea no aperiri appellantur. Nullam consulatu rationibus et vix, at facer utamur virtute eos.
 
