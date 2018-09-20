@@ -29,6 +29,14 @@ export const ArticlePostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <div className="article-default-image-container">
+              <img
+                className="article-default-image" 
+                style={{width: 350}}
+                src={image}
+              />
+            </div>
+
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -45,8 +53,7 @@ export const ArticlePostTemplate = ({
           </div>
         </div>
         <br/>
-          <img 
-            src={image}/>
+
       </div>
     </section>
   )
