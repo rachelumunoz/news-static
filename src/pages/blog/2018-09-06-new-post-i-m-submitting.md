@@ -11,6 +11,7 @@ tags:
   - awesome
   - cool
   - testing
+image: /img/15.jpeg
 ---
 Eam ea saperet conceptam. Cu delenit sapientem gloriatur nam, in aeque referrentur eam. Ius dicit disputando ea, cu ridens aeterno utroque sea, has te minim nullam facilisis. Quo at numquam atomorum expetenda, aeque eirmod posidonium est an. Qui ne libris graecis, cetero praesent et nec. Altera facilisi no duo, ei nec wisi habemus.
 
