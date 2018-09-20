@@ -7,6 +7,7 @@ tags:
   - article
   - awesome
   - cool
+image: /img/10.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare lectus sit amet est placerat in egestas. Sapien eget mi proin sed. Vel quam elementum pulvinar etiam non quam lacus. Diam vulputate ut pharetra sit. Massa tincidunt dui ut ornare lectus sit amet. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis. Sit amet nisl suscipit adipiscing bibendum est. Velit euismod in pellentesque massa placerat duis. Sagittis id consectetur purus ut faucibus pulvinar. Nulla at volutpat diam ut venenatis tellus in metus.
 

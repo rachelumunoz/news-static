@@ -9,6 +9,7 @@ description: >-
 tags:
   - brewing
   - chemex
+image: /img/1.jpeg
 ---
 ![chemex](/img/chemex.jpg)
 

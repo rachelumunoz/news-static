@@ -1,12 +1,13 @@
 ---
 templateKey: blog-post
-title: flgkjslfg
+title: lla aliquet enim
 date: '2018-09-07T16:37:14-07:00'
 description: >-
   Quisque sagittis purus sit amet volutpat. Pellentesque elit eget gravida cum
   sociis natoque penatibus et magnis. Lorem dolor sed viverra ipsum nunc. 
 tags:
   - awesome
+image: /img/13.jpeg
 ---
 ![coffee](/img/chemex.jpg)
 
