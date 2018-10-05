@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: review
 title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 date: '2018-09-20T16:00:11-07:00'
 description: Donec et odio pellentesque diam volutpat

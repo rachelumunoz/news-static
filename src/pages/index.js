@@ -43,18 +43,12 @@ export default class IndexPage extends React.Component {
   // }
 
   loadImage(post){
-    // if (post.fields.image === null){
-    //   return this.state.images[this.state.imageCounter++]
-    // } else {
-    //   return post.fields.image
-    // }
-
-    console.log("post is", post)
     if (post.frontmatter.image === null){
-      // return `/img/${Math.floor(Math.random() * 10) + 1}.jpeg`
+      // return default image
       return "/img/20.jpeg"
-    } else return post.frontmatter.image
-    
+    } else {
+      return post.frontmatter.image
+    }     
   }
   
   render() {
@@ -151,6 +145,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            articleType
             image
             date(formatString: "MMMM DD, YYYY")
             tags

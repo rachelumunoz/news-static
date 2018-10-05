@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: article
 title: lla aliquet enim
 date: '2018-09-07T16:37:14-07:00'
 description: >-

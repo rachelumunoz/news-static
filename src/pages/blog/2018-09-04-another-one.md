@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: news
 title: another one
 date: '2018-09-04T14:59:10-07:00'
 description: >-

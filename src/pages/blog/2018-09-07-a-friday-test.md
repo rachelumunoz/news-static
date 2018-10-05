@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: article
 title: a friday test
 date: '2018-09-07T15:59:25-07:00'
 description: i am testing this right now to see how it looks

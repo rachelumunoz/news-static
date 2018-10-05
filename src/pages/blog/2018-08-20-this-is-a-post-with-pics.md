@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: article
 title: this is a post with pics
 date: '2018-08-20T16:54:26-07:00'
 description: all the cool pics you wanna see

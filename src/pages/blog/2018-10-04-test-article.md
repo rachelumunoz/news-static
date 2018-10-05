@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-article-type: article
+postType: article
 title: test article
 date: '2018-10-04T12:02:09-07:00'
 description: testing the article type

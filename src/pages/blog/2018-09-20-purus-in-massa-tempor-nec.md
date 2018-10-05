@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: article
 title: Purus in massa tempor nec
 date: '2018-09-20T13:38:19-07:00'
 description: Tortor consequat id porta nibh venenatis cras sed.

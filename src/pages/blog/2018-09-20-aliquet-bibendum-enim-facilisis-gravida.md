@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: review
 title: Aliquet bibendum enim facilisis gravida.
 date: '2018-09-20T11:09:46-07:00'
 description: 'Vitae turpis massa sed elementum '

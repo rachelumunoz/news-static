@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: news
 title: >-
   bore et dolore magna aliqua. Amet dictum sit amet justo donec enim. Morbi enim
   n

@@ -10,17 +10,16 @@ export default class NewsPage extends React.Component {
   render() {
     const { data } = this.props
 
-
-    console.log("data in news", data)
-    const { edges: posts } = data.allMarkdownRemark
-    // console.log("edges", posts);
-
-    
+    if (data.allMarkdownRemark === null){
+      return <h1>empty</h1>
+    } else {
+      
+      const { edges: posts } = data.allMarkdownRemark 
     return (
       <section className="section">
         <div className="container">
           <div className="content grid">
-            <h1 className="has-text-weight-bold is-size-2">Latest News</h1>
+            <h1 className="has-text-weight-bold is-size-2">News</h1>
           </div>
          
           {posts
@@ -61,6 +60,10 @@ export default class NewsPage extends React.Component {
         </div>
       </section>
     )
+    }
+
+    console.log("this is the data", data)
+    
   }
 }
 
@@ -76,7 +79,7 @@ export const pageQuery = graphql`
   query NewsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "article-post" } }}
+      filter: { frontmatter: { postType: { eq: "news" } }}
     ) { 
       edges {
         node {

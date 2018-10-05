@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: review
 title: testing with a pic
 date: '2018-08-24T12:10:11-07:00'
 description: awesome description describing pots

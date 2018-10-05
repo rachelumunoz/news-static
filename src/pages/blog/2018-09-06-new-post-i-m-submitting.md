@@ -1,5 +1,6 @@
 ---
 templateKey: blog-post
+postType: review
 title: new post i'm submitting
 date: '2018-09-06T09:58:19-07:00'
 description: >-
