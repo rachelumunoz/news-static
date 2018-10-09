@@ -83,13 +83,13 @@ const Post = ({ data }) => {
   )
 }
 
-ArticlePost.propTypes = {
+Post.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default ArticlePost
+export default Post
 
 export const pageQuery = graphql`
   query PostByID($id: String!) {
