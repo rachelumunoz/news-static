@@ -3,49 +3,11 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 export default class IndexPage extends React.Component {
-  constructor(props){
-    super(props)
-
-    console.log("data is ", )
-
-    this.state = {
-      imageCounter: 0,
-      images : [
-        "/img/1.jpeg",
-        "/img/2.jpeg",
-        "/img/3.jpeg", 
-        "/img/4.jpeg", 
-        "/img/5.jpeg", 
-        "/img/6.jpeg", 
-        "/img/7.jpeg", 
-        "/img/8.jpeg", 
-        "/img/9.jpeg", 
-        "/img/10.jpeg", 
-        "/img/11.jpeg", 
-        "/img/12.jpeg", 
-        "/img/13.jpeg", 
-        "/img/14.jpeg", 
-        "/img/15.jpeg", 
-        "/img/16.jpeg", 
-        "/img/17.jpeg",
-        "/img/18.jpeg",
-        "/img/19.jpeg",
-        "/img/20.jpeg"   
-      ]
-    }
-  }
-
-  // getNum(){
-  //   let counter = this.state.imageCounter;
-  //   console.log("the counter is", counter++)
-
-  //   return 0
-  // }
-
+  
   loadImage(post){
     if (post.frontmatter.image === null){
       // return default image
-      return "/img/20.jpeg"
+      return "/img/bananas.jpg"
     } else {
       return post.frontmatter.image
     }     
