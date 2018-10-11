@@ -6,7 +6,6 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "gatsby": "^2.0.21",
-    "gatsby-link": "^2.0.4",
     "gatsby-plugin-netlify": "^2.0.1",
     "gatsby-plugin-netlify-cms": "^3.0.3",
     "gatsby-plugin-react-helmet": "^3.0.0",
