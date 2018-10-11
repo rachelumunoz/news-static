@@ -74,7 +74,7 @@ ReviewsPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query ReviewsQuery {
+  {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { postType: { eq: "review" } }}

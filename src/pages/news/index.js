@@ -75,7 +75,7 @@ NewsPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query NewsQuery {
+  {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { postType: { eq: "news" } }}
