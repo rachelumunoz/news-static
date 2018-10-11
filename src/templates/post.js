@@ -34,6 +34,7 @@ export const PostTemplate = ({
                   className="article-default-image" 
                   style={{width: 350}}
                   src={image}
+                  alt="default"
                 />
               </div>
 

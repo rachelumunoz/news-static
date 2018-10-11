@@ -6,10 +6,6 @@ import TemplateWrapper from '../../components/layout'
 
 
 export default class NewsPage extends React.Component {
-  constructor(props){
-    super(props)
-  }
-
   render() {
     const { data } = this.props
 
@@ -43,6 +39,7 @@ export default class NewsPage extends React.Component {
                       >
                           <img className="news-image"
                             src={`${post.frontmatter.image}`}
+                            alt="default"
                             />
                       </Link>
                     </div>
@@ -66,9 +63,6 @@ export default class NewsPage extends React.Component {
       </TemplateWrapper>
     )
     }
-
-    console.log("this is the data", data)
-    
   }
 }
 

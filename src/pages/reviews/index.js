@@ -38,6 +38,7 @@ export default class ReviewsPage extends React.Component {
                       >
                           <img className="news-image"
                             src={`${post.frontmatter.image}`}
+                            alt="default"
                             />
                       </Link>
                     </div>
@@ -61,9 +62,6 @@ export default class ReviewsPage extends React.Component {
       </TemplateWrapper>
     )
     }
-
-    console.log("this is the data", data)
-    
   }
 }
 

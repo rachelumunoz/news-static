@@ -46,6 +46,7 @@ export default class IndexPage extends React.Component {
                         <Link to={post.fields.slug}>
                           <img 
                             src={`${this.loadImage(post)}`}
+                            alt="default"
                             />
                         </Link>
                         <div
