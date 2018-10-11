@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+import TemplateWrapper from '../components/layout'
+
 export default class IndexPage extends React.Component {
   
   loadImage(post){
@@ -20,66 +22,69 @@ export default class IndexPage extends React.Component {
     console.log("edges", posts);
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Live Music News</h1>
-          </div>
-          <div className="grid-container">
-            {posts
-              .map(({ node: post }) => (
-
-                
-                <div
-                  className="grid-cell"
-                  style={{ border: '1px solid #eaecee'}}
-                  key={post.id}
-                >
-                  <div
-                    className="cell-content"                  
-                  >
-                    <div className="dynamic">
-                    
-                      <Link to={post.fields.slug}>
-                        <img 
-                          src={`${this.loadImage(post)}`}
-                          />
-                      </Link>
-                      <div
-                        className="article-title"
-                      >
-                        <p>
-                          <Link className="has-text-primary" to={post.fields.slug}>
-                            {post.frontmatter.title}
-                          </Link>
-                          <br/>
-                          <small>{post.frontmatter.date}</small>
-                        </p>
-                      </div>
-                      
-                      <br/>
-                      <br/>
-                    
-                      <div
-                        className="post-container"
-                      >
-                        <p
-                          className="post-excerpt"
-                        >
-                          {post.excerpt}
-                        </p>
-                      </div>
-                    </div>
-
-                    
-                  </div>
-                </div>
-              ))}
+      <TemplateWrapper>
+        <section className="section">
+          <div className="container">
+            <div className="content">
+              <h1 className="has-text-weight-bold is-size-2">Latest Live Music News</h1>
             </div>
-        </div>
-        <br/>
-        <br/>
-      </section>
+            <div className="grid-container">
+              {posts
+                .map(({ node: post }) => (
+
+                  
+                  <div
+                    className="grid-cell"
+                    style={{ border: '1px solid #eaecee'}}
+                    key={post.id}
+                  >
+                    <div
+                      className="cell-content"                  
+                    >
+                      <div className="dynamic">
+                      
+                        <Link to={post.fields.slug}>
+                          <img 
+                            src={`${this.loadImage(post)}`}
+                            />
+                        </Link>
+                        <div
+                          className="article-title"
+                        >
+                          <p>
+                            <Link className="has-text-primary" to={post.fields.slug}>
+                              {post.frontmatter.title}
+                            </Link>
+                            <br/>
+                            <small>{post.frontmatter.date}</small>
+                          </p>
+                        </div>
+                        
+                        <br/>
+                        <br/>
+                      
+                        <div
+                          className="post-container"
+                        >
+                          <p
+                            className="post-excerpt"
+                          >
+                            {post.excerpt}
+                          </p>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                ))}
+              </div>
+          </div>
+          <br/>
+          <br/>
+        </section>
+      </TemplateWrapper>
+      
     )
   }
 }
