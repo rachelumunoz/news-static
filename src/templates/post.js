@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import Content, { HTMLContent } from '../components/Content'
 
 export const PostTemplate = ({
