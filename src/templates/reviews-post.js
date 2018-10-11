@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Content, { HTMLContent } from '../components/Content'
 
 export const ReviewsPostTemplate = ({
@@ -15,9 +15,6 @@ export const ReviewsPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
-    // console.log("image", image)
-
 
   return (
     <section className="section">
