@@ -5,7 +5,7 @@ import PostPreview from './preview-templates/PostPreview'
 
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
-CMS.registerPreviewTemplate('blog', PostPreview)
+CMS.registerPreviewTemplate('post', PostPreview)
 
 
 
