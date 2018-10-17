@@ -1,26 +1,23 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import logo from '../img/bit-logo.png'
+import logo from '../img/bitFist.svg'
+import bitText from '../img/bitText.svg'
+import '../layouts/navbar.sass'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Bandsintown" style={{ width: 'auto' }} />
-          </figure>
-        </Link>
-      </div>
-      <div className="navbar-start">
-      <Link className="navbar-item" to="/news">
-          News
-        </Link>
-        <Link className="navbar-item" to="/reviews">
-          Reviews
-        </Link>
-      </div>
+  <nav>
+    <div className="bandsintownLogoContainer">
+      <a className="bandsintownLogo" href="/">
+        <img className="bitFist" src={logo}/>
+        <img className="bitText" src={bitText}/> 
+      </a>
+    </div>
+    <div className="links">
+      <a href="/">News</a>
+      <a href="/">Reviews</a>
+      <a href="/">Features</a>
+      <a href="/">Lists</a>
     </div>
   </nav>
 )

@@ -1,122 +1,125 @@
-@import "~bulma/sass/utilities/initial-variables"
-
-// Config vars
-$kaldi-red: #00B4B3
-$kaldi-red-invert: #fff
-
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
-
-
-// Helper Classes
-.full-width-image-container
-  width: 100vw
-  height: 400px
-  position: relative
-  left: 50%
-  right: 50%
-  margin: 5em -50vw
-  background-size: cover
-  background-position: bottom
-  display: flex
-  justify-content: center
-  align-items: center
-
-.margin-top-0
-  margin-top: 0 !important
-
-
-
-
-.grid-container
-  max-width: 100%
-  margin: 0
-  display: grid
-  
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px
-  /* border: 5px solid red */
-
-.grid-cell
-  /* background-color: grey */
-  /* border: 3px solid black */
-
-.cell-content
-  max-height: 100%
-  max-width: 100%
-
-.cell-content image 
+@import variables
+@import base-styles
+@import post
   
 
+// // Config vars
+// $kaldi-red: #00B4B3
+// $kaldi-red-invert: #fff
 
-.dynamic
+// $primary: $kaldi-red
+// $primary-invert: $kaldi-red-invert
 
-
-.post-container
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-
-
-.post-excerpt
-  overflow: hidden
-  max-height: 30px
-  padding: 10px
-  margin-bottom: 10px
-
-
-.article-title
-  height: 50px
-  padding-bottom: 20px
-  margin: 20px
-
-.title-style
+// .content .taglist
+//   list-style: none
+//   margin-bottom: 0
+//   margin-left: 0
+//   margin-right: 1.5rem
+//   margin-top: 1.5rem
+//   display: flex
+//   flex-wrap: wrap
+//   justify-content: left
+//   align-items: center
+//   li
+//     padding: 0 2rem 1rem 0
+//     margin-bottom: 1.5rem
+//     margin-top: 0
 
 
+// // Helper Classes
+// .full-width-image-container
+//   width: 100vw
+//   height: 400px
+//   position: relative
+//   left: 50%
+//   right: 50%
+//   margin: 5em -50vw
+//   background-size: cover
+//   background-position: bottom
+//   display: flex
+//   justify-content: center
+//   align-items: center
+
+// .margin-top-0
+//   margin-top: 0 !important
 
 
 
 
-/* news-template */
-.news-cell
-  display: flex
+// .grid-container
+//   max-width: 100%
+//   margin: 0
+//   display: grid
+  
+//   grid-template-columns: repeat(3, 1fr);
+//   grid-gap: 30px
+//   /* border: 5px solid red */
+
+// .grid-cell
+//   /* background-color: grey */
+//   /* border: 3px solid black */
+
+// .cell-content
+//   max-height: 100%
+//   max-width: 100%
+
+// .cell-content image 
+  
 
 
-.left-side
-  min-width: 30%
-
-.right-side
-  display: flex
-  flex-direction: column
-  padding: 20px
-
-.news-image
-
-.article-default-image-container
-  display: flex
-  flex-direction: column
-  align-items: center
+// .dynamic
 
 
-.article-default-image
-  margin: 20px
+// .post-container
+//   display: flex
+//   flex-direction: column
+//   justify-content: space-between
 
-// .post img
-//   border: 5px solid red
 
-@import "~bulma"
+// .post-excerpt
+//   overflow: hidden
+//   max-height: 30px
+//   padding: 10px
+//   margin-bottom: 10px
+
+
+// .article-title
+//   height: 50px
+//   padding-bottom: 20px
+//   margin: 20px
+
+// .title-style
+
+
+
+
+
+
+// /* news-template */
+// .news-cell
+//   display: flex
+
+
+// .left-side
+//   min-width: 30%
+
+// .right-side
+//   display: flex
+//   flex-direction: column
+//   padding: 20px
+
+// .news-image
+
+// .article-default-image-container
+//   display: flex
+//   flex-direction: column
+//   align-items: center
+
+
+// .article-default-image
+//   margin: 20px
+
+// // .post img
+// //   border: 5px solid red
+
+// @import "~bulma"

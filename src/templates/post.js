@@ -20,24 +20,15 @@ export const PostTemplate = ({
 
   return (
     <TemplateWrapper>  
-      <section className="section">
+      <section className="bodyContainer">
         {helmet || ''}
-        <div className="container content">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+        <div className="">
+          <div className="">
+            <div className="">
+              <h1 className="title">
                 {title}
               </h1>
               <p>{description}</p>
-              <div className="article-default-image-container">
-                <img
-                  className="article-default-image" 
-                  style={{width: 350}}
-                  src={image}
-                  alt="default"
-                />
-              </div>
-
               <PostContent content={content} />
               {tags && tags.length ? (
                 <div style={{ marginTop: `4rem` }}>
@@ -77,10 +68,15 @@ const Post = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
+      helmet={ 
+        <Helmet>
+          <title> {post.frontmatter.title} </title>
+          <meta name="description" content={post.frontmatter.description}></meta>
+        </Helmet>
+      }
     />
   )
 }
