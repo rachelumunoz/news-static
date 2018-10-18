@@ -1,20 +1,30 @@
 @import variables
+
+* 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   
 body 
-  margin: 0px
   font-family: $font-stack
   background-color: $background-grey
   -webkit-font-smoothing: antialiased
 
 .childrenContainer
   margin: 20px
-  box-sizing: border-box
-  background-color: #FFFFFF
+  background-color: $white
+  border: 1px solid purple
   border-radius: 4px
 
 .bodyContainer
-    max-width: 50%
+    // max-width: 50%
     // border: 1px solid red
 
 // img   
   // display: none
+
+
+@media (min-width: 400px)
+  .childrenContainer
+    border: 1px solid green
