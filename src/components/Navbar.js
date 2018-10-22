@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import logo from '../img/bitFist.svg'
 import bitText from '../img/bitText.svg'
+import hamburgerMenuIcon from '../img/hamburgerMenuIcon.svg'
 import '../layouts/navbar.sass'
 
 const Navbar = () => (
@@ -18,6 +19,15 @@ const Navbar = () => (
       <a href="/">Reviews</a>
       <a href="/">Features</a>
       <a href="/">Lists</a>
+    </div>
+    <div className="hamburgerMenuContainer">
+      <img className="hamburgerMenuIcon" src={hamburgerMenuIcon} />
+      <div className="hamburgerMenuLinks">
+        <a href="/">News</a>
+        <a href="/">Reviews</a>
+        <a href="/">Features</a>
+        <a href="/">Lists</a>
+      </div>
     </div>
   </nav>
 )
