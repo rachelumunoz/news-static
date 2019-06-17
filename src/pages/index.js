@@ -19,7 +19,7 @@ export default class IndexPage extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     // console.log("data", data)
-    console.log("edges", posts);
+    // console.log("edges", posts);
 
     return (
       <TemplateWrapper>
