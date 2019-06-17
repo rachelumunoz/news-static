@@ -77,7 +77,13 @@ const Post = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={
+      <Helmet>
+        <title>
+          {`${post.frontmatter.title} | Blog`} 
+        </title>
+      </Helmet> 
+      }
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
